@@ -1,0 +1,19 @@
+{
+  "name": "express-blog-intro",
+  "version": "1.0.0",
+  "description": "Blog personale da arricchire giorno dopo giorno",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Giunta-Giovanni/express-blog-intro.git"
+  },
+  "author": "Giunta Giovanni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Giunta-Giovanni/express-blog-intro/issues"
+  },
+  "homepage": "https://github.com/Giunta-Giovanni/express-blog-intro#readme"
+}
