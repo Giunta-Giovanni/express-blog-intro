@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Giunta-Giovanni/express-blog-intro/issues"
   },
-  "homepage": "https://github.com/Giunta-Giovanni/express-blog-intro#readme"
+  "homepage": "https://github.com/Giunta-Giovanni/express-blog-intro#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
