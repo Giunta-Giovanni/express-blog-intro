@@ -5,6 +5,9 @@ const app = express();
 // specifichiamo la porta su cui il server express sarà in ascolto
 const port = 3000;
 
+// asset statico 
+app.use(express.static('public'));
+
 // definiamo la prima rotta
 app.get('/', (req,res) => {
     res.send ('Server del mio blog')
@@ -15,34 +18,34 @@ app.get('/bacheca', (req,res) => {
     const bacheca = 
     [
       {
-        "titolo": "Le rotte commerciali più trafficate del mondo",
-        "contenuto": "Un'analisi delle principali rotte marittime utilizzate nel commercio internazionale e la loro importanza economica.",
-        "immagine": "https://example.com/rotte-commerciali.jpg",
-        "tags": ["marittimo", "commercio", "logistica", "rotte"]
+        "titolo": "Ciambellone al Limone",
+        "contenuto": "Il ciambellone al limone è una torta soffice e profumata, perfetta per una merenda o una colazione leggera. Preparato con ingredienti semplici come farina, zucchero, uova, limone e burro, è un dolce che conquista con il suo sapore fresco e la sua consistenza morbida.",
+        "immagine": "/images/ciambellone.jpeg",
+        "tags": ["ciambellone", "limone", "dolce", "colazione", "merenda", "ricetta"]
       },
       {
-        "titolo": "Come funzionano i container nel trasporto marittimo",
-        "contenuto": "Scopri il ruolo essenziale dei container nel commercio globale e come vengono gestiti nei porti.",
-        "immagine": "https://example.com/container-trasporto.jpg",
-        "tags": ["logistica", "container", "spedizioni", "commercio"]
+        "titolo": "Cracker alla Barbabietola",
+        "contenuto": "I cracker alla barbabietola sono uno snack salato e sano, perfetto per accompagnare formaggi o per uno spuntino leggero. Realizzati con farina integrale, barbabietola fresca e un tocco di olio d'oliva, offrono un sapore ricco e una consistenza croccante.",
+        "immagine": "/images/cracker_barbabietola.jpg",
+        "tags": ["cracker", "barbabietola", "snack", "salato", "sano", "spuntino"]
       },
       {
-        "titolo": "Le navi mercantili più grandi del mondo",
-        "contenuto": "Dai colossi del trasporto merci alle petroliere più imponenti: un viaggio tra le navi più grandi mai costruite.",
-        "immagine": "https://example.com/navi-mercantili.jpg",
-        "tags": ["marittimo", "navi", "trasporto", "ingegneria"]
+        "titolo": "Pane Fritto Dolce",
+        "contenuto": "Il pane fritto dolce è un dolce semplice e goloso, perfetto per un dessert o una merenda speciale. Realizzato con fette di pane morbido, zucchero, cannella e un po' di burro, viene fritto fino a doratura, creando una crosticina croccante e un interno soffice.",
+        "immagine": "/images/pane_fritto_dolce.jpeg",
+        "tags": ["pane fritto", "dolce", "dessert", "merenda", "cannella", "zucchero"]
       },
       {
-        "titolo": "Sicurezza in mare: le normative per la navigazione mercantile",
-        "contenuto": "Una panoramica sulle principali normative internazionali che regolano la sicurezza delle navi mercantili.",
-        "immagine": "https://example.com/sicurezza-navigazione.jpg",
-        "tags": ["sicurezza", "marittimo", "regolamenti", "navigazione"]
+        "titolo": "Pasta alla Barbabietola",
+        "contenuto": "La pasta alla barbabietola è un piatto colorato e saporito, che unisce il gusto delicato della barbabietola alla semplicità della pasta fresca. Preparata con farina, barbabietola cotta e un pizzico di sale, questa pasta è perfetta con sughi leggeri o anche solo con burro fuso e parmigiano.",
+        "immagine": "/images/pasta_barbabietola.jpeg",
+        "tags": ["pasta", "barbabietola", "vegetariano", "piatto colorato", "succo di barbabietola", "ricetta sana"]
       },
       {
-        "titolo": "Lavorare su una nave mercantile: ruoli e responsabilità",
-        "contenuto": "Scopri le diverse figure professionali a bordo delle navi mercantili e le loro mansioni quotidiane.",
-        "immagine": "https://example.com/lavoro-nave.jpg",
-        "tags": ["marittimo", "carriera", "equipaggio", "trasporto"]
+        "titolo": "Torta Paesana",
+        "contenuto": "La torta paesana è un dolce tipico della tradizione lombarda, ricca di sapore e storia. Preparata con ingredienti semplici come pane raffermo, cacao, latte, uova e frutta secca, è un dessert rustico e umido, perfetto per accompagnare una tazza di tè o un caffè. Il suo gusto intenso e la consistenza morbida la rendono ideale per ogni occasione.",
+        "immagine": "/images/torta_paesana.jpeg",
+        "tags": ["torta", "paesana", "tradizione", "dolce rustico", "cacao", "frutta secca", "colazione", "dessert"]
       }
     ]
     res.json(bacheca)
