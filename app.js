@@ -12,5 +12,5 @@ app.get('/', (req,res) => {
 
 // avviamo il server, mettendolo in ascolto sulla porta indicata
 app.listen (port,() => {
-    console.log (`Example aoo listening on port ${port}`)
+    console.log (`Example app listening on port ${port}`)
 })
